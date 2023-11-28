@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "adsclientthread_package_chobtrong"
+dynamic = ["version"]
+version = "0.0.1"
+authors = [
+  { name="Thitipun Chobtrong", email="teddy.chobtrong@gmail.com" },
+]
+
+description = "Beckhoff TwinCat ADS client thread"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Windows",
+    "Development Status :: 4 - Beta"
+]
+keywords = ["ads", "Beckhoff", "ads client", "thread"]
+dependencies = [
+  "pyads>=3.3.9",
+  "PyYAML>=6.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/tchobtrong/adsclientthread.git"
+Issues = "https://github.com/tchobtrong/adsclientthread/issues"

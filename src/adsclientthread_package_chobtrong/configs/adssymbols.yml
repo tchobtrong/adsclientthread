@@ -1,0 +1,371 @@
+symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
+
+  # TO Robot ===
+  Robot_INT_inputs.b_Grundstellung:
+    type: BOOL
+    mode: W
+
+  Robot_INT_inputs.b_UpdateParam:
+    type: BOOL
+    mode: W
+
+  Robot_INT_inputs.b_Start:
+    type: BOOL
+    mode: W
+
+  Robot_INT_inputs.b_ProgAbbrechen:
+    type: BOOL
+    mode: W
+
+  Robot_INT_inputs.b_Quittieren:
+    type: BOOL
+    mode: W
+
+  # Robot_INT_inputs.b_camera_done:
+  Robot_INT_inputs.b_bereit:
+    type: BOOL
+    mode: W
+
+  Robot_INT_outputs.Zahler_soll:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Job_Number:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Druckkraft:
+    type: INT
+    mode: W
+  
+  Robot_INT_inputs.Roll_Geschwindigkeit:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Weg:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Fingerdurchmesser:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Amplitude:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Frequency:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.X_Verschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Y_Verschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Z_Verschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Anstellwinkel_Start:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Shiftwinkel_Start:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.RZ_Offset_Start :
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Anstellwinkel_Ende :
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Shiftwinkel_Ende:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Rz_Offset_End:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Start_Roll_Angle:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.End_Roll_Angle:
+    type: INT
+    mode: W
+
+  # Robot_INT_inputs.FWD_Speed:
+  Robot_INT_inputs.Drift_X_Wert_Start:
+    type: INT
+    mode: W
+
+  #Robot_INT_inputs.Shift_Speed_X_FWD_Speed:
+  Robot_INT_inputs.Drift_X_Wert_Ende:
+    type: INT
+    mode: W
+
+  # Robot_INT_inputs.Shift_Speed_Y_FWD_Speed:
+  Robot_INT_inputs.Drift_Y_Wert_Start:
+    type: INT
+    mode: W
+
+  # Robot_INT_inputs.Rot_Speed_X:
+  Robot_INT_inputs.Drift_Y_Wert_Ende:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Rot_Speed_Y:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.Rot_Speed_Z:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Scannerverschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_inputs.Zahler_soll:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.target_finger:
+    type: INT
+    mode: W
+
+  Robot_INT_inputs.target_scanner:
+    type: INT
+    mode: W
+
+  # From Robot ===
+  
+  Robot_INT_outputs.b_IstInGrundstellung:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.b_Grundstellungen:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.b_ParamGelesen:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.b_Running:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.b_Done:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error1:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error2:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error3:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error4:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error5:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error6:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error7:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error8:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error9:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error10:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error11:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error12:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error13:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error14:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error15:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Error16:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Zahler_soll:
+    type: BOOL
+    mode: R
+
+  Robot_INT_outputs.Job_Number:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Druckkraft:
+    type: INT
+    mode: R
+  
+  Robot_INT_outputs.Roll_Geschwindigkeit:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Weg:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Fingerdurchmesser:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Amplitude:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Frequency:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.X_Verschiebung:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Y_Verschiebung:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Z_Verschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_outputs.Anstellwinkel_Start:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Shiftwinkel_Start:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.RZ_Offset_Start :
+    type: INT
+    mode: X
+
+  Robot_INT_outputs.Anstellwinkel_Ende :
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Shiftwinkel_Ende:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Rz_Offset_End:
+    type: INT
+    mode: X
+
+  Robot_INT_outputs.Start_Roll_Angle:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.End_Roll_Angle:
+    type: INT
+    mode: R
+
+  # Robot_INT_outputs.FWD_Speed:
+  Robot_INT_outputs.Drift_X_Wert_Start:
+    type: INT
+    mode: R
+
+  # Robot_INT_outputs.Shift_Speed_X_FWD_Speed:
+  Robot_INT_outputs.Drift_X_Wert_Ende:
+    type: INT
+    mode: R
+
+  # Robot_INT_outputs.Shift_Speed_Y_FWD_Speed:
+  Robot_INT_outputs.Drift_Y_Wert_Start:
+    type: INT
+    mode: R
+
+  # Robot_INT_outputs.Rot_Speed_X:
+  Robot_INT_outputs.Drift_Y_Wert_Ende:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Rot_Speed_Y:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Rot_Speed_Z:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Scannerverschiebung:
+    type: INT
+    mode: X
+
+  Robot_INT_outputs.Zahler_soll:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.target_finger:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.target_scanner:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.Gewicht_IST:
+    type: INT
+    mode: R
+
+  Robot_INT_outputs.b_camera_ready:
+    type: INT
+    mode: R
+  
+
+
+
+  
+
+
+  
+
+  

@@ -1,0 +1,6 @@
+# ADS server configuration
+ADS:
+  ads_server_netid: "192.168.60.102.1.1" # DEV PC
+  ads_target_username: "Administrator"
+  ads_target_pw: "1"
+  ads_var_list_path: "./configs/adssymbols.yml"
