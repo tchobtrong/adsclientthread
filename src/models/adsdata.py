@@ -16,6 +16,7 @@ import threading
 import sys
 from typing import List
 import pyads
+from pyads import Connection
 from utils.ads_vars import Ads_Vars
 
 
@@ -43,6 +44,27 @@ class Adsdata (object):
        
         except Exception as e:
             logging.error("Cannot create ADS model: " + str(e))
+
+    def checkallsymbols(self, plcconn:Connection)->bool:
+        '''
+        Check all symbols in read list.
+
+        Return: True -> Found all symbols, False -> Cannot found any symbols
+        '''
+
+        err = False
+
+        for adsdata in self.readlist:
+            try:
+                testdata = plcconn.read_by_name(adsdata)
+                logging.info("Found the symbol [" + str(adsdata) + "] in the ADS Server ")
+
+            except Exception as e:
+                logging.error("! Cannot find the symbol [" + str(adsdata) + "]: " + str(e))
+                err = True
+
+        return err
+
 
     def setreadlist(self, readlist):
         for adsdata in readlist:

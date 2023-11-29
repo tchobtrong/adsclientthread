@@ -78,10 +78,17 @@ class AdsClienthandler(Thread):
                                         pyads.PORT_TC3PLC1)
                 self.plc.open()
 
+                # check if all sysbols exists in the target plc
+                notFoundSymbol = self.adsmodel.checkallsymbols(self.plc)
+
+                if notFoundSymbol:
+                    logging.error("Cannot find all ads symbols. Terminate the ads client thread")
+
+
             except Exception as e:
                 logging.error("Cannot connect to ADS server: " + str(e))
 
-            while self.run_event.is_set():
+            while self.run_event.is_set() and not notFoundSymbol:
 
                 try:
 

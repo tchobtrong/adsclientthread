@@ -21,7 +21,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: BOOL
     mode: W
 
-  # Robot_INT_inputs.b_camera_done:
   Robot_INT_inputs.b_bereit:
     type: BOOL
     mode: W
@@ -42,10 +41,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: W
 
-  Robot_INT_inputs.Weg:
-    type: INT
-    mode: W
-
   Robot_INT_inputs.Fingerdurchmesser:
     type: INT
     mode: W
@@ -60,15 +55,11 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
 
   Robot_INT_inputs.X_Verschiebung:
     type: INT
-    mode: X
+    mode: W
 
   Robot_INT_inputs.Y_Verschiebung:
     type: INT
-    mode: X
-
-  Robot_INT_inputs.Z_Verschiebung:
-    type: INT
-    mode: X
+    mode: W
 
   Robot_INT_inputs.Anstellwinkel_Start:
     type: INT
@@ -78,21 +69,13 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: W
 
-  Robot_INT_inputs.RZ_Offset_Start :
-    type: INT
-    mode: X
-
   Robot_INT_inputs.Anstellwinkel_Ende :
     type: INT
     mode: W
 
-  Robot_INT_inputs.Shiftwinkel_Ende:
+  Robot_INT_inputs.Shiftwinkel_End:
     type: INT
     mode: W
-
-  Robot_INT_inputs.Rz_Offset_End:
-    type: INT
-    mode: X
 
   Robot_INT_inputs.Start_Roll_Angle:
     type: INT
@@ -102,37 +85,21 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: W
 
-  # Robot_INT_inputs.FWD_Speed:
   Robot_INT_inputs.Drift_X_Wert_Start:
     type: INT
     mode: W
 
-  #Robot_INT_inputs.Shift_Speed_X_FWD_Speed:
   Robot_INT_inputs.Drift_X_Wert_Ende:
     type: INT
     mode: W
 
-  # Robot_INT_inputs.Shift_Speed_Y_FWD_Speed:
   Robot_INT_inputs.Drift_Y_Wert_Start:
     type: INT
     mode: W
 
-  # Robot_INT_inputs.Rot_Speed_X:
   Robot_INT_inputs.Drift_Y_Wert_Ende:
     type: INT
     mode: W
-
-  Robot_INT_inputs.Rot_Speed_Y:
-    type: INT
-    mode: W
-
-  Robot_INT_inputs.Rot_Speed_Z:
-    type: INT
-    mode: X
-
-  Robot_INT_inputs.Scannerverschiebung:
-    type: INT
-    mode: X
 
   Robot_INT_inputs.Zahler_soll:
     type: INT
@@ -248,10 +215,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: R
 
-  Robot_INT_outputs.Weg:
-    type: INT
-    mode: R
-
   Robot_INT_outputs.Fingerdurchmesser:
     type: INT
     mode: R
@@ -272,9 +235,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: R
 
-  Robot_INT_outputs.Z_Verschiebung:
-    type: INT
-    mode: X
 
   Robot_INT_outputs.Anstellwinkel_Start:
     type: INT
@@ -284,10 +244,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
     type: INT
     mode: R
 
-  Robot_INT_outputs.RZ_Offset_Start :
-    type: INT
-    mode: X
-
   Robot_INT_outputs.Anstellwinkel_Ende :
     type: INT
     mode: R
@@ -295,10 +251,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
   Robot_INT_outputs.Shiftwinkel_Ende:
     type: INT
     mode: R
-
-  Robot_INT_outputs.Rz_Offset_End:
-    type: INT
-    mode: X
 
   Robot_INT_outputs.Start_Roll_Angle:
     type: INT
@@ -327,18 +279,6 @@ symbols:  # Mode: R -> Read, W -> Read and Write, X -> Ignore
   Robot_INT_outputs.Drift_Y_Wert_Ende:
     type: INT
     mode: R
-
-  Robot_INT_outputs.Rot_Speed_Y:
-    type: INT
-    mode: R
-
-  Robot_INT_outputs.Rot_Speed_Z:
-    type: INT
-    mode: R
-
-  Robot_INT_outputs.Scannerverschiebung:
-    type: INT
-    mode: X
 
   Robot_INT_outputs.Zahler_soll:
     type: INT

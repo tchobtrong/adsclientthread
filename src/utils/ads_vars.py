@@ -108,7 +108,7 @@ class Ads_Vars(object):
                     logging.info("!!! The symbol [" + str(adsname) + "] is ignored.")
 
 
-class Ads_Var():
+class Ads_Var(object):
     '''
     Ads variables
 
@@ -118,7 +118,7 @@ class Ads_Var():
         value [var]: Value of the variable
     '''
 
-    def __init__(self, adsname, datatype):
+    def __init__(self, adsname:str, datatype:str):
         self.adsname = adsname
         self.datatype = datatype
         self.value = self.defaultvalue()
@@ -127,6 +127,7 @@ class Ads_Var():
         msg = "[" + self.adsname + "] "
         msg = msg + "is successfully created for ADS server."
         logging.info(msg)
+
 
     def defaultvalue(self):
         '''
