@@ -1,5 +1,5 @@
 import unittest2
-from src.utils.ads_vars import Ads_Var
+from src.adsclientthread_package_tchobtrong.utils.ads_vars import Ads_Var
 
 
 class Ads_Var_Testcase(unittest2.TestCase):

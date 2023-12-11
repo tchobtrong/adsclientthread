@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "adsclientthread_package_chobtrong"
+name = "adsclientthread_package_tchobtrong"
 version = "0.0.1"
 authors = [
   { name="Thitipun Chobtrong", email="teddy.chobtrong@gmail.com" },
